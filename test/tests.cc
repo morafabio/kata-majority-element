@@ -2,8 +2,7 @@
 #include "gtest/gtest.h"
 #include "../src/main.cpp"
 
-TEST(MainCase, MayorityTest) {
-
+TEST(MainCase, MajorityTest) {
     int expectedNumber = 42;
     std::vector<int> fixtureVector { 1, 2, 3, 42, 42, 42, 42 };
 
@@ -13,8 +12,6 @@ TEST(MainCase, MayorityTest) {
 }
  
 GTEST_API_ int main(int argc, char **argv) {
-    std::cout << "Running tests.cc main()\n";
-    testing::InitGoogleTest(&argc, argv);
-    
+    testing::InitGoogleTest(&argc, argv); 
     return RUN_ALL_TESTS();
 }
